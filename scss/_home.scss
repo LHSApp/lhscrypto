@@ -1,0 +1,376 @@
+$lg: 1200px;
+$md: 768px;
+$sm: 576px;
+
+.py-bg {
+  padding-top: 3.5rem;
+  padding-bottom: 8.5rem;
+
+  @media (max-width: $lg) {
+    padding-top: 2.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  @media (max-width: $md) {
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  @media (max-width: $sm) {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.container {
+  display: flex;
+
+  @media (max-width: $md) {
+    flex-direction: column;
+  }
+}
+
+.col-text,
+.col-image {
+  width: 50%;
+
+  @media (max-width: $md) {
+    width: 100%;
+  }
+}
+
+.title,
+.subtitle,
+.button {
+  color: #232323;
+}
+
+.title {
+  width: 450px;
+  font-family: Cardo;
+  font-size: 92.432px;
+  font-weight: 700;
+  line-height: 84.432px;
+  letter-spacing: -2.492px;
+
+  @media (max-width: $md) {
+    font-size: 28px;
+  }
+}
+
+.subtitle {
+  width: 456px;
+  font-family: Lato;
+  font-size: 16.657px;
+  font-weight: 400;
+  letter-spacing: -0.109px;
+  padding: 15px 0;
+
+  @media (max-width: $md) {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 60px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+  font-family: Lato;
+  font-size: 19px;
+  font-weight: 900;
+  letter-spacing: -0.521px;
+  margin-top: 15px;
+
+  &:hover {
+    background-color: gray;
+    color: black;
+    }
+
+  @media (max-width: $md) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.image {
+  max-width: 100%;
+}
+
+.bg-b {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  background: #1e1e1e;
+  padding-bottom: 90px;
+}
+
+.col-text2 {
+  width: 41%;
+  color: #fff;
+  margin: 0 auto;
+  padding-top: 85px;
+
+  h2 {
+    color: #e9e7e7;
+    font-family: Cardo;
+    font-size: 62.414px;
+    font-weight: 700;
+    line-height: 68.414px;
+    letter-spacing: -2.492px;
+    padding-bottom: 18px;
+    width: 447px;
+  }
+
+  p {
+    color: #e9e7e7;
+    font-family: Lato;
+    font-size: 16.657px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.109px;
+  }
+
+  h4 {
+    color: #e9e7e7;
+    font-family: Lato;
+    font-size: 25.022px;
+    font-weight: 900;
+    letter-spacing: -0.625px;
+  }
+
+  .col-text3 {
+    padding-top: 30px;
+    width: 483px;
+
+    @media (max-width: $md) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: $md) {
+    width: 100%;
+
+    h2 {
+      width: 100%;
+      font-size: 50px;
+    }
+  }
+}
+
+.col-image2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  height: auto;
+  padding-top: 94px;
+  padding-bottom: 5px;
+  position: relative;
+  left: 43px;
+
+  @media (max-width: $md) {
+    width: 100%;
+    justify-content: center;
+    left: 0;
+  }
+}
+
+$stroke-width: 3px;
+.bg-column {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  display: flex;
+  max-width: 1371px !important;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+
+  img {
+    max-width: 100%;
+  }
+
+  .stroke {
+    width: 10%;
+    height: $stroke-width;
+    background: #333;
+    margin-top: 24px;
+  }
+
+  h2 {
+    width: 260px;
+    color: #232323;
+    font-family: Cardo;
+    font-size: 26.504px;
+    font-weight: 900;
+    line-height: 36.523px;
+    letter-spacing: -2.49px;
+    margin-top: 20px;
+  }
+
+  p {
+    width: 100%;
+    color: #232323;
+    font-family: Lato;
+    font-size: 16.642px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.109px;
+    margin-top: 0.25rem;
+  }
+
+  @media (min-width: 600px) {
+    width: calc(100% / 3);
+  }
+}
+
+.bg-c {
+  background: #e9e7e7;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+
+  p {
+    margin: 0 auto;
+    color: #232323;
+    text-align: center;
+    font-family: Cardo;
+    font-size: 81.429px;
+    font-weight: 700;
+    line-height: 81.429px;
+    letter-spacing: -2.492px;
+    width: 600px;
+    margin-top: 83px;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    p {
+      width: 100%;
+      font-size: 48px;
+    }
+  }
+}
+
+#carrossel {
+  display: flex;
+  flex-direction: column; /* Alteração para exibir os cards um abaixo do outro */
+  align-items: center; /* Centraliza os cards horizontalmente */
+
+  img {
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  div {
+    padding: 13px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  h3,
+  p {
+    text-align: center;
+    color: #232323;
+  }
+
+  h3 {
+    font-family: Lato;
+    font-size: clamp(18px, 2vw, 25px);
+    font-weight: 900;
+    letter-spacing: -0.625px;
+    padding: 20px;
+  }
+
+  p {
+    font-family: Lato;
+    font-size: clamp(14px, 1.5vw, 16px);
+    font-weight: 400;
+    letter-spacing: -1.109px;
+    width: 300px;
+    max-width: 100%;
+  }
+
+  @media (max-width: 986px) {
+    img {
+      border-radius: 50%;
+      margin: 0 auto;
+      padding: 15px;
+    }
+
+    div {
+      padding: 0;
+      border-radius: 10px;
+      margin: 10px;
+      flex-wrap: wrap;
+      height: auto;
+    }
+  }
+}
+
+.carousel {
+  display: flex;
+  background: #e9e7e7;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+  margin-left: 21px;
+  width: 90px !important;
+  height: 90px !important;
+  border-radius: 5px;
+}
+
+.card {
+  border: 2px solid #000 !important;
+  width: 100%;
+  background: #e9e7e7 !important;
+}
+
+.carousel-inner {
+  height: 500px;
+
+  @media (max-width: 768px) {
+    height: 400px;
+  }
+}
+
+.carousel-control-prev-icon {
+  background-image: url("img/seta-esquerda.svg") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("img/seta-direita.svg") !important;
+}
+
+.carousel-control-next, .carousel-control-prev{
+  width: 10%!important;
+}
+
+.carousel-inner
+  .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+.carousel-inner
+  .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+  + .carousel-item,
+.carousel-inner
+  .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+  + .carousel-item
+  + .carousel-item {
+  transition: none;
+}
